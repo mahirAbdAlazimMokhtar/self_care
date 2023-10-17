@@ -12,11 +12,11 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _slelectedIndex = 0;
+  //int _slelectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
-    var hight = MediaQuery.of(context).size.height;
+   // var hight = MediaQuery.of(context).size.height;
     List<String> selfCareItems = ['Practice', 'Movies', 'Books', 'Learning'];
     List<String> practiceItems = [
       'Meditation',
@@ -122,13 +122,112 @@ class _HomeScreenState extends State<HomeScreen> {
                         FeelingWidget(emoji: '😞', title: 'Sad'),
                         FeelingWidget(emoji: '😑', title: 'Neutral'),
                         FeelingWidget(emoji: '🥳', title: 'Happy'),
-
                       ],
                     ),
                   ],
                 ),
               ),
             ),
+            Expanded(
+              flex: 2,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Constants.blackGreen,
+                  borderRadius: const BorderRadius.only(
+                    topLeft: Radius.circular(50),
+                    topRight: Radius.circular(50),
+                  ),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 30),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(height: 30),
+
+                      const Text('Next appointments',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500,
+                          )),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.all(15),
+                            decoration: BoxDecoration(
+                              color: Colors.grey.shade600.withOpacity(0.4),
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: const Column(
+                              children: [
+                                Text(
+                                  '28',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Text('April',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 11,
+                                    )),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 15,
+                          ),
+                          Expanded(
+                            child: Container(
+                              padding: const EdgeInsets.all(15),
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade600.withOpacity(0.4),
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      const Text(
+                                        '14:30',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                      const SizedBox(height: 10),
+                                      Text('Mahir Mokhtar',
+                                          style: TextStyle(
+                                            color: Colors.grey.shade400,
+                                          ))
+                                    ],
+                                  ),
+                                  const Icon(Icons.more_horiz_outlined,
+                                      color: Colors.white)
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            )
           ])
         ])));
   }
