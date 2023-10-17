@@ -6,7 +6,46 @@
 ## package used in this ui :-
 iconsax ,
 badges
+## 📦 Packages 
+| Description    |   Package |
+| ---------| -------|
+| iconsax | (https://pub.dev/packages/iconsax/versions)|
+| badges | (https://pub.dev/packages/badges)  |
 
 
-#Screen Shoot ui
+## Screenshot 📸
+
+
+|                                |                                                                          |
+| :----------------------------: | :----------------------------------------------------------------------: |
+|             Home Screen              |                          
+![alt text](https://github.com/mahirAbdAlazimMokhtar/self_care/blob/master/screen_shoot/home.png)
+|          Dragable Screen           |        
+![alt text](https://github.com/mahirAbdAlazimMokhtar/self_care/blob/master/screen_shoot/dragable.png)
+
+
+
+
+
+
+
+ 
+## 🩻 Project Structure  
+
+```
+
+
+📁lib
+		|__ 📁Screens 
+		|__ 📁utils
+		|__ 📁widgets <- define themes & and colors
+	
+
+```
+
+
+## 💭 Inspiration
+(https://dribbble.com/shots/20960950-Self-care-App-UI)
+
+
 
