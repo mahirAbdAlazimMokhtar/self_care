@@ -1,16 +1,12 @@
 # self_care
 
-A new Flutter project.
 
-## Getting Started
+> The mental health assistant app helps users track their mental health and connect with professionals. It offers resources, tools, and exercises for managing stress, anxiety, and depression. Meet our new concept with these features.
 
-This project is a starting point for a Flutter application.
+## package used in this ui :-
+iconsax ,
+badges
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+#Screen Shoot ui
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
