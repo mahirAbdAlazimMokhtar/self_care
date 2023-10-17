@@ -113,7 +113,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ],
                         ),
                         const SizedBox(
-                          height: 20,
+                          height: 22,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
